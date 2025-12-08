@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=stylesheet href="style.css">
+    <script src="https://kit.fontawesome.com/97cf945b40.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="certificate.html">Certificates</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+<!----------------------------------------------------------Haqqımda ---------------------------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" class="ps-about">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Myself</h1>
+                    <p>My name is Turan Abdullayev, and I’m an 18-year-old IT student with a strong interest in cybersecurity, networks, and modern information technologies. I’m currently building the foundations of my professional career — learning, experimenting, and creating projects that push me closer to becoming a cybersecurity specialist. I believe in continuous growth. Every day I try to improve my technical understanding, challenge myself with new concepts, and develop the mindset needed to solve real-world problems in the tech industry.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('education')">Education</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('skills')">Skills</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Azerbaijan State Oil and Industry University (ASOIU)</span><br>Bachelor’s Degree in Information Technology
+2024 — 2028 (Expected Graduation)<br>At ASOIU, I’m strengthening my knowledge in:
+
+Networking & computer communications
+
+Programming fundamentals
+
+Cybersecurity concepts & threat analysis
+
+Databases, SQL, and system architecture
+
+IT infrastructure & operating systems
+
+Software development basics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>While I’m early in my professional path, I’ve already begun developing hands-on experience through university work and personal projects:</span><br>Cybersecurity Practice Labs
+Conducting basic vulnerability scans, analyzing system weaknesses, and experimenting in safe test environments.
+
+Network Simulation Projects
+Designing and configuring network topologies using tools like Cisco Packet Tracer.
+
+Web Development Projects
+Creating responsive web pages and portfolio layouts using HTML, CSS, and JavaScript.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span></li>
+                            <li><span>Soft Skills</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>       
+    
+    <div class="copyright">
+        <p>
+            © 2025 Zahra Abdullayeva. <i class="fa-regular fa-heart" style="color: #00BCD4;"></i>
+            All rights reserved.
+        </p>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+</html>

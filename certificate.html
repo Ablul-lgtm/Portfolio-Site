@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=stylesheet href="style.css">
+    <script src="https://kit.fontawesome.com/97cf945b40.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="logo">
+                <ul id="sidemenu">
+<li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="certificate.html">Certificates</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+<!----------------------------------------------------------------------Xidmətlər----------------------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Cisco — Introduction to Cybersecurity</h2>
+                    <p>
+                        Gained an understanding of cyber threats, attack types, security principles, and the importance of cybersecurity in the modern world.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-mintbit"></i>
+                    <h2>Python Programming Essentials (Course Certificate)</h2>
+                    <p>Studied programming fundamentals, data structures, logic, and basic scripting to support automation and cybersecurity tasks.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-calendar-minus"></i>
+                    <h2>Google IT Support Professional Certificate — Coursera</h2>
+                    <p>Completed a comprehensive program covering:
+
+Troubleshooting and problem-solving in IT environments
+
+Networking fundamentals and protocols
+
+System administration on Windows and Linux
+
+Security fundamentals and best practices
+This certification strengthened my foundation in IT support and prepared me for real-world technical challenges.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/8R3EPOFQ4Z7U">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>        
+    <div class="copyright">
+        <p>
+            © 2025 Zahra Abdullayeva. <i class="fa-regular fa-heart" style="color: #00BCD4;"></i>
+            All rights reserved.
+        </p>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

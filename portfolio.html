@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel=stylesheet href="style.css">
+    <script src="https://kit.fontawesome.com/97cf945b40.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="logo">
+                <ul id="sidemenu">
+<li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="certificate.html">Certificates</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+<!------------------------------------------------------------------Təlimlər--------------------------------------------------------------->
+    <div id="portfolio">
+        <div class="containaer">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/port.png" class="logo">
+                    <div class="layer">
+                        <h3>Network Topology Simulation</h3>
+                        <p>Using Cisco Packet Tracer</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="images/port2.png" class="logo">
+                    <div class="layer">
+                        <h3>SQL Database Management System</h3>
+                        <p>created and optimized for university projects</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <div class="work">
+                    <img src="images/port3.png" class="logo">
+                    <div class="layer">
+                        <h3>HTML/CSS/JS Portfolio Website</h3>
+                        <p>(yes… this very site 😌)</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Daha çox</a>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>
+            © 2025 Zahra Abdullayeva. <i class="fa-regular fa-heart" style="color: #00BCD4;"></i>
+            All rights reserved.
+        </p>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
